@@ -1,11 +1,9 @@
 package twofish;
 
 import java.io.PrintWriter;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.security.InvalidKeyException;
 import java.util.Arrays;
-import java.util.stream.Stream;
 //...........................................................................
 
 /**
@@ -862,7 +860,7 @@ public final class TwofishAlgorithm // implicit no-argument constructor
         byte[] data = new byte[len / 2];
         for (int i = 0; i < len; i += 2) {
             data[i / 2] = (byte) ((Character.digit(s.charAt(i), 16) << 4)
-                    + Character.digit(s.charAt(i+1), 16));
+                    + Character.digit(s.charAt(i + 1), 16));
         }
         return data;
     }
@@ -921,20 +919,4 @@ public final class TwofishAlgorithm // implicit no-argument constructor
         return decodedText;
     }
 
-
-    // main(): use to generate the Intermediate Values KAT
-//...........................................................................
-    public static void main(String[] args) throws Exception {
-//        self_test(16);
-//        self_test(24);
-//        self_test(32);
-
-        String plainText = "Hello, my name is Kyrylo Terentiev. I am Salesforce developer at Synebo.";
-        System.out.println("plaintext: " + plainText);
-        String sourceKey = "kirillterentyev";
-        String encoded = textEncrypt(plainText, sourceKey, 16);
-        System.out.println("encodedText: " + encoded);
-        String decoded = textDecrypt(encoded, sourceKey, 16);
-        System.out.println("decodedText: " + decoded);
-    }
 }

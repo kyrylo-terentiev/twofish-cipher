@@ -25,6 +25,6 @@
             <Cursor fx:constant="DEFAULT" />
          </cursor></TextField>
       <Button fx:id="licenseButton" layoutX="1127.0" layoutY="11.0" mnemonicParsing="false" text="License" />
-      <Hyperlink layoutX="848.0" layoutY="12.0" text="https://github.com/terentyevkirill/twofish-cipher" />
+      <Hyperlink fx:id="githubLink" layoutX="848.0" layoutY="12.0" text="https://github.com/terentyevkirill/twofish-cipher" />
    </children>
 </Pane>
