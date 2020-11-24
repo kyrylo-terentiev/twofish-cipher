@@ -95,6 +95,9 @@ public class Controller {
     }
 
     private void setupTextAreas() {
+        keyText.setWrapText(true);
+        inputText.setWrapText(true);
+        outputText.setWrapText(true);
         keyText.textProperty().addListener((obs, oldVal, newVal) -> {
             if (newVal.length() > keyLengthSlider.getValue()) {
                 keyError.setText("Max. key length is " + (int) keyLengthSlider.getValue());

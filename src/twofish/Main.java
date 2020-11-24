@@ -21,3 +21,4 @@ public class Main extends Application {
         launch(args);
     }
 }
+my-very-cool-key-32-bytes-ok

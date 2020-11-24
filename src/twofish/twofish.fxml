@@ -4,27 +4,27 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twofish.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" style="-fx-font-size: 14;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="twofish.Controller">
    <children>
-      <ToggleButton fx:id="decodeButton" layoutX="605.0" layoutY="11.0" mnemonicParsing="false" text="Decoding" />
-      <ToggleButton fx:id="encodeButton" layoutX="532.0" layoutY="11.0" mnemonicParsing="false" selected="true" text="Encoding" />
-      <Button fx:id="proceedButton" layoutX="568.0" layoutY="566.0" mnemonicParsing="false" text="Encode" />
-      <Label layoutX="268.0" layoutY="48.0" text="Input" />
-      <TextArea fx:id="inputText" layoutX="14.0" layoutY="75.0" prefHeight="210.0" prefWidth="585.0" />
-      <TextArea fx:id="keyText" layoutX="14.0" layoutY="447.0" prefHeight="69.0" prefWidth="585.0" />
-      <TextArea fx:id="outputText" editable="false" layoutX="605.0" layoutY="75.0" prefHeight="442.0" prefWidth="585.0" />
-      <Label layoutX="881.0" layoutY="48.0" text="Output" />
-      <Label layoutX="114.0" layoutY="343.0" text="Key length" />
-      <Label layoutX="426.0" layoutY="343.0" text="Rounds" />
-      <Label fx:id="inputError" contentDisplay="CENTER" layoutX="254.0" layoutY="291.0" text="Input error" textFill="RED" visible="false" />
-      <Label fx:id="keyError" alignment="CENTER" layoutX="280.0" layoutY="530.0" text="Key error" textFill="RED" visible="false" />
-      <Label fx:id="outputError" alignment="CENTER" layoutX="878.0" layoutY="530.0" text="Result error" textFill="RED" visible="false" />
-      <Slider fx:id="keyLengthSlider" blockIncrement="8.0" layoutX="72.0" layoutY="372.0" majorTickUnit="8.0" max="32.0" min="16.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" value="16.0" />
-      <TextField fx:id="roundsNum" alignment="CENTER" disable="true" editable="false" layoutX="421.0" layoutY="366.0" prefWidth="50.0" text="16">
+      <ToggleButton fx:id="decodeButton" layoutX="605.0" layoutY="11.0" mnemonicParsing="false" style="-fx-font-size: 14;" text="Decoding" />
+      <ToggleButton fx:id="encodeButton" layoutX="513.0" layoutY="11.0" mnemonicParsing="false" selected="true" style="-fx-font-size: 14;" text="Encoding" />
+      <Button fx:id="proceedButton" layoutX="568.0" layoutY="556.0" mnemonicParsing="false" style="-fx-font-size: 14;" text="Encode" />
+      <Label layoutX="268.0" layoutY="48.0" style="-fx-font-size: 14;" text="Input" />
+      <TextArea fx:id="inputText" layoutX="14.0" layoutY="75.0" prefHeight="210.0" prefWidth="585.0" style="-fx-font-size: 14;" />
+      <TextArea fx:id="keyText" layoutX="14.0" layoutY="447.0" prefHeight="69.0" prefWidth="585.0" style="-fx-font-size: 14;" />
+      <TextArea fx:id="outputText" editable="false" layoutX="605.0" layoutY="75.0" prefHeight="442.0" prefWidth="585.0" style="-fx-font-size: 14;" />
+      <Label layoutX="881.0" layoutY="48.0" style="-fx-font-size: 14;" text="Output" />
+      <Label layoutX="114.0" layoutY="343.0" style="-fx-font-size: 14;" text="Key length" />
+      <Label layoutX="426.0" layoutY="343.0" style="-fx-font-size: 14;" text="Rounds" />
+      <Label fx:id="inputError" alignment="CENTER" contentDisplay="CENTER" layoutX="254.0" layoutY="291.0" style="-fx-font-size: 14;" text="Input error" textFill="RED" visible="false" />
+      <Label fx:id="keyError" alignment="CENTER" layoutX="280.0" layoutY="530.0" style="-fx-font-size: 14;" text="Key error" textFill="RED" visible="false" />
+      <Label fx:id="outputError" alignment="CENTER" layoutX="878.0" layoutY="530.0" style="-fx-font-size: 14;" text="Result error" textFill="RED" visible="false" />
+      <Slider fx:id="keyLengthSlider" blockIncrement="8.0" layoutX="72.0" layoutY="372.0" majorTickUnit="8.0" max="32.0" min="16.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" style="-fx-font-size: 14;" value="16.0" />
+      <TextField fx:id="roundsNum" alignment="CENTER" disable="true" editable="false" layoutX="421.0" layoutY="366.0" prefWidth="50.0" style="-fx-font-size: 14;" text="16">
          <cursor>
             <Cursor fx:constant="DEFAULT" />
          </cursor></TextField>
-      <Button fx:id="licenseButton" layoutX="1127.0" layoutY="11.0" mnemonicParsing="false" text="License" />
-      <Hyperlink fx:id="githubLink" layoutX="848.0" layoutY="12.0" text="https://github.com/terentyevkirill/twofish-cipher" />
+      <Button fx:id="licenseButton" layoutX="1105.0" layoutY="11.0" mnemonicParsing="false" style="-fx-font-size: 14;" text="License" />
+      <Hyperlink fx:id="githubLink" layoutX="785.0" layoutY="12.0" text="https://github.com/terentyevkirill/twofish-cipher" />
    </children>
 </Pane>
